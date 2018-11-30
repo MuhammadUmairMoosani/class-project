@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1140px) {
+	iframe {
+		width:120%;
+	}
+	#address_icon {
+    padding:10px;
+    display:block;
+    width:10px;
+    font-size:50px;
+    color:red;
+	margin-left:-110%;
+	margin-top:110px;
+}
+#address {
+padding:5px;
+position:relative;
+left:-280px;
+bottom:55px;
+font-weight:bold;
+font-family:arial;
+   
+}
+#contact_en {
+   position:relative;
+   left:50px;
+   bottom:140px;
+}
+}
+@media only screen and (max-width: 880px) {
+	#iconad {
+		position:absolute;
+		bottom:500px;
+	}
+	#conMain_from i {
+	width:5%;
+    padding:6px 12px;
+    padding-bottom:19px;
+	position:relative;
+	top:-5px;
+}
+#conMain_from input {
+    padding:9px;
+    border-radius:5px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    width:200px;
+    height:19px;
+
+}
+#conMain_from  textarea {
+    width:215px;
+    height:200px;
+    background-color:#eae8e9;
+    font-family:arial;
+    font-size:15px;
+    border:2px solid #eae8e9;
+
+}
+#textIconSize i {
+	position:relative;
+	top:-187px;
+}
+#conMain_from button {
+    padding:20px 30px;
+    margin-left:88px;
+}
+#conMain_from  #iconad {
+		position:relative;
+		top:11px;
+	}
+}
+@media only screen and (max-width: 745px) {
+	iframe {
+		margin-top:200px;
+	}
+	#conMain_from {
+		margin-left:20%;
+	}
+	#hidenMapHead {
+		display:none;
+	}
+	#conMian  h2 {
+    margin:10% 0px 0% 10%;
+    padding:10px;
+}
+#address {
+padding:5px;
+position:relative;
+left:100px;
+bottom:150px;
+font-weight:bold;
+font-family:arial;
+   
+}
+	#address_icon {
+    padding:10px;
+    display:block;
+    width:10px;
+    font-size:50px;
+    color:red;
+	margin-left:10%;
+	margin-top:110px;
+	position:relative;
+	top:-90px;
+}
+}
+@media only screen and (max-width: 455px) {
+	#conMian {
+		margin-top:600px;
+	}
+	#conMian {
+		margin-right:20%;
+	}
+	#conMian button {
+		position:relative;
+		left:-25%;
+	}
+	#conMian #iconad {
+		position:relative;
+		top:11px;
+	}
+	#address {
+		position:relative;
+		left:60px;
+	}
+	#conMain_from p {
+		width:120%;
+		position:relative;
+		left:-20%;
+	}
+	
+}

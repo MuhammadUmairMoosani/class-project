@@ -1,0 +1,24 @@
+@media only screen and (max-width: 602px) {
+	#main-table td {
+border-right:2px solid #ededed;
+border-left:2px solid #ededed;
+padding:0px;
+text-align:center;
+font-family:arial;
+display:inline-block;
+width:100%;
+}
+	#main-table img {
+    width:240px;
+    height:300px;
+}
+}
+@media only screen and (max-width: 455px) {
+	#main-table {
+		margin-top:200px;
+	}
+	.childHomePage {
+     position:relative;
+	 bottom:200px;
+}
+}

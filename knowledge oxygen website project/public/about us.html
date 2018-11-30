@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <link href="knowledgeoxygen.css" type="text/css" rel="stylesheet">
+        <link href="icon/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="abous us mq.css" type="text/css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+                                                                     <!--header Start-->
+    <div class="container">
+        <div id="header">
+            <img src="images/knowledgeoxygen.jpg"  id="logo-image"/>
+            <ul id="nlist">
+                <li class="color" onMouseover="over(0)" onMouseout="out(0);"><a href="index.html"><img src="images/homepage2.png" id="im0" /></a><br /><a href="index.html" id="con1">Home</a></li>
+                 <li class="color" id="hhover" onMouseover="over(2);" onMouseout="out(2);"><img src="images/books11.png" id="im2"   /><br /><a href="#" id="con3">Books</a>
+                <ul id="under" class="hide">
+                    <li><a href="historical fiction.html">Historical Fiction</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="short story.html">Short Story</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+					
+                </ul>
+                </li>
+                        <li class="color" id="hhover1"  onMouseover="over(3);" onMouseout="out(3);"><img src="images/magazine2.jpg" id="im3"   /><a href="#" id="con4">Magazine</a>
+                <ul id="mzin" class="hide" >
+                    <li><a href="tribune.html">Tribune</a></li>
+                    <li><a href="redbook.html">Redbook</a></li>
+                    <li><a href="wired.html">Wired</a></li>
+                    <li><a href="entertainment weekly.html">Entertainment Weekly</a></li>
+                </ul>
+                </li>
+                <li class="color" onMouseover="over(1);" onMouseout="out(1);"><a href="about us.html"><img src="images/About-Us-Icon-22.png" id="im1"  /></a><br /><a href="about us.html" id="con2">About <span class="usHide">Us</span></a></li>
+                <li class="color" onMouseover="over(4);" onMouseout="out(4);"><a href="contact us.html" ><img src="images/ContactUs-0111.gif" id="im4"  /></a><br /><a href="contact us.html" id="con">Contact <span class="usHide">Us</span></a></li>
+                <li class="meandmy"><a href="cart.html"><img src="images/shoping cart.jpg" id="im5" /></a><span id="cartEndi" class="cartHide">""</span></li>
+            </ul>
+        </div>
+    </div>        
+
+   <div class="clear">
+    </div>
+
+                                                                  <!--header End-->
+<div class="sm" ></div>
+                                                                    <!--Main page Start-->
+
+<div>
+       
+     <div id="aboutdiv2">
+       <img src="images/about us/aboutImage.jpg" width="100%" height="800px" />
+	   </div>
+    <div id="aboutdiv1">
+        <h1>ABOUT US</h1>
+        <p>Knowledge oxygen website is providing a online reading solution.
+When was over team to think about to providing this services its 
+very complicating to practically because we needs a authors and 
+readers to purchase book in this website.Then we search about this 
+and find out people really need this type of website to reading eBook 
+and authors to sale there books in this platform to earn good money.Now 
+we are also send hard-copy to customer address all over the world.
+Our team is not just publish eBook, we are meet authors to know about 
+what next to write about what and we providing customers view what type 
+of books readers like to read and what thing to need improving. Our team 
+is very talented to manage a relationship authors and customers.   </p>
+    </div>
+    
+</div>
+
+
+
+                                                                       <!--Main page End-->
+                                                                      <!--Footer start-->
+
+        <div class="container">
+    <div id="footer">
+        <ul>
+            <li><a href="https://pk.linkedin.com/"><img src="images/footer/in.png" /></a><br /><a href="https://pk.linkedin.com/">Linkedin</a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/footer/youtube.png" /></a><br /><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="https://www.facebook.com/"><img src="images/footer/facebook1.jpg" /></a><br /><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/"><img src="images/footer/pinterest.jpg" /></a><br /><a href="https://www.pinterest.com/">Pinterest</a></li>
+            <li><a href="https://twitter.com/"><img src="images/footer/twitter.jpg" /></a><br /><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/footer/instragram.png" /></a><br /><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://plus.google.com/"><img src="images/footer/google.png" /></a><br /><a href="https://plus.google.com/">Google+</a></li>
+        </ul>
+        <p>The world belongs to those who read.<br />
+        we work with clients from all over.Get in touch with us!
+        </p>
+        <ul id="div2">
+            <li><img src="images/footer/email.png" /><a href="mailto:kazijatoi@gmail.com"><b id="b1">kazijatoi@gmail.com</b></a></li>
+            <li><img src="images/footer/phone.jpg" /><b id="b2">0335-1379302</b></li>
+            <li><img src="images/footer/home.png" /><b id="b3">Knowledge Oxygen book shop</b><br /><b id="b4">25 Sandwich Street,Plymouth,02360.</b></li>
+        </ul>
+    </div>
+</div>
+<div id="last">
+    
+</div> 
+<script src="knowledgeoxygen.js" type="text/javascript">
+<script type="text/javascript">
+//cart quantity display Start
+												
+var cartImageQuantityDisplay = JSON.parse(localStorage["shoppingCart"]);
+var cartQunatityCount = 0;
+if(cartImageQuantityDisplay.length === 0) {
+} else {
+	for(i = 0; i < cartImageQuantityDisplay.length;i++) {
+		cartQunatityCount += cartImageQuantityDisplay[i].count;
+		document.getElementById("cartEndi").innerHTML = cartQunatityCount;
+		document.getElementById("cartEndi").className = "cartShow";
+	}
+}
+												//cart quantity display End
+</script>                                                                   <!--Footer End-->
+    </body>
+</html>

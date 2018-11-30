@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+        <link href="shopping cart.css" type="text/css" rel="stylesheet">
+        <link href="icon/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>	
+                                                                <!--header Start-->
+    <div class="container">
+        <div id="header">
+            <img src="images/knowledgeoxygen.jpg"  id="logo-image"/>
+            <ul id="nlist">
+                <li class="color" onMouseover="over(0)" onMouseout="out(0);"><a href="index.html"><img src="images/homepage2.png" id="im0" /></a><br /><a href="index.html" id="con1">Home</a></li>
+                 <li class="color" id="hhover" onMouseover="over(2);" onMouseout="out(2);"><img src="images/books11.png" id="im2"   /><br /><a href="#" id="con3">Books</a>
+                <ul id="under" class="hide">
+                    <li><a href="historical fiction.html">Historical Fiction</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="short story.html">Short Story</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+					
+                </ul>
+                </li>
+                        <li class="color" id="hhover1"  onMouseover="over(3);" onMouseout="out(3);"><img src="images/magazine2.jpg" id="im3"   /><a href="#" id="con4">Magazine</a>
+                <ul id="mzin" class="hide" >
+                    <li><a href="tribune.html">Tribune</a></li>
+                    <li><a href="redbook.html">Redbook</a></li>
+                    <li><a href="wired.html">Wired</a></li>
+                    <li><a href="entertainment weekly.html">Entertainment Weekly</a></li>
+                </ul>
+                </li>
+                <li class="color" onMouseover="over(1);" onMouseout="out(1);"><a href="about us.html"><img src="images/About-Us-Icon-22.png" id="im1"  /></a><br /><a href="about us.html" id="con2">About <span class="usHide">Us</span></a></li>
+                <li class="color" onMouseover="over(4);" onMouseout="out(4);"><a href="contact us.html" ><img src="images/ContactUs-0111.gif" id="im4"  /></a><br /><a href="contact us.html" id="con">Contact <span class="usHide">Us</span></a></li>
+                <li class="meandmy"><a href="cart.html"><img src="images/shoping cart.jpg" id="im5" /></a><span id="cartEndi" class="cartHide">""</span></li>
+            </ul>
+        </div>
+    </div>        
+
+   <div class="clear">
+    </div>
+
+                                                                  <!--header End-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+        <div id="cartDiv" class="dis">
+		<table id="cartTable">
+		<tr>
+		<th>Image</th>
+		<th>Author Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Total Price</th>
+		</tr>
+	    </table>
+		</div>
+<div id="vv"></div>
+
+		<div class="show1" id="noItem">"No Items to selected"</div>
+		
+		 <div id="cartDiv1" class="dis">
+		<table id="cartTable1">
+		<tr>
+		<th></th>
+		<th></th>
+		<th>Grand Total</th>
+		<th id="gQ"></th>
+		<th id="gP">Total Price</th>
+		</tr>
+	    </table>
+		</div>
+<button onClick="placeOrder();" id="btn" class="dis" style="cursor:pointer">Order Now</button>
+		
+        <script>
+var imageArray = ["images/book font images/font cover/a time to kill.jpg",
+    "images/book font images/font cover/american.jpg",
+    "images/book font images/font cover/ancient rome.jpg",
+    "images/book font images/font cover/digital bank.jpg",
+    "images/book font images/font cover/doing life.jpg",
+    "images/book font images/font cover/fade to black.jpg",
+    "images/book font images/font cover/giver.jpg",
+    "images/book font images/font cover/heretic.jpg",
+    "images/book font images/font cover/hope and miracle.jpg",
+    "images/book font images/font cover/lord of the ring.jpg",
+    "images/book font images/font cover/morrissey.png",
+    "images/book font images/font cover/night of the living dead.jpg",
+    "images/book font images/font cover/once open a dream.jpg",
+    "images/book font images/font cover/redplanet.jpg",
+    "images/book font images/font cover/runing with crows.jpg",
+    "images/book font images/font cover/shifter.jpg",
+    "images/book font images/font cover/take.jpg",
+    "images/book font images/font cover/the avenger.jpg",
+    "images/book font images/font cover/the button.jpg",
+    "images/book font images/font cover/the deception artist.jpg",
+    "images/historical/a game of thrones.jpg",
+    "images/historical/a glimpse of freedom.jpg",
+    "images/historical/abraham lincoln.jpg",
+    "images/historical/against our better judgment.jpg",
+    "images/historical/anna karenina.jpg",
+    "images/historical/Ceras-Place.jpg",
+    "images/historical/creator failure.jpg",
+    "images/historical/erik larson.jpg",
+    "images/historical/fever.jpg",
+    "images/historical/let honor prevail.jpg",
+    "images/historical/nablus.jpg",
+    "images/historical/philippa gregory.jpg",
+    "images/historical/psychology of space exploration.jpg",
+    "images/historical/scripting.jpg",
+    "images/historical/slavery and human progress.jpg",
+    "images/historical/the hand fasted wife.jpg",
+    "images/historical/the knight.jpg",
+    "images/historical/the miniaturist.jpg",
+    "images/historical/the wise man.jpg",
+    "images/historical/we were the lucky one.jpg",
+    "images/adventure/blood.jpg",
+    "images/adventure/dungeon of dread.jpg",
+    "images/adventure/ella.jpg",
+    "images/adventure/forbidden.jpg",
+    "images/adventure/huckleberry.jpg",
+    "images/adventure/hyperrion.jpg",
+    "images/adventure/island of the blue dolphin.jpg",
+    "images/adventure/man of action.jpg",
+    "images/adventure/not the end of the world.jpg",
+    "images/adventure/one game home.jpg",
+    "images/adventure/romulus buckle.jpg",
+    "images/adventure/seed o f harmony.png",
+    "images/adventure/soldier son.jpg",
+    "images/adventure/the lazarus machine.jpg",
+    "images/adventure/the lost garden.jpg",
+    "images/adventure/the sea of monsters.jpg",
+    "images/adventure/the wolf.jpg",
+    "images/adventure/the world we make.jpg",
+    "images/adventure/walking the nile.jpg",
+    "images/adventure/will winlder.jpg",
+    "images/horror/anguish.jpg",
+    "images/horror/anno dracula.jpg",
+    "images/horror/dark creature.jpg",
+    "images/horror/dark vanishing.jpg",
+    "images/horror/dead house.jpg",
+    "images/horror/holy ghosts.jpg",
+    "images/horror/les chiens.jpg",
+    "images/horror/night stone.jpg",
+    "images/horror/phobic.jpg",
+    "images/horror/silent murder.jpg",
+    "images/horror/sis ter.jpg",
+    "images/horror/stephen king.jpg",
+    "images/horror/suicide games.jpg",
+    "images/horror/survival of the dead.jpg",
+    "images/horror/the creep.jpg",
+    "images/horror/the ice scream man.jpg",
+    "images/horror/the lost girl.png",
+    "images/horror/the walking dead.jpg",
+    "images/horror/vampire diaries.jpg",
+    "images/horror/zombie night.jpg",
+    "images/short story/A kiling of engel.jpg",
+    "images/short story/books of die for.jpg",
+    "images/short story/breaking the time barrier.gif",
+    "images/short story/city on fir.jpg",
+    "images/short story/dave aggers.jpg",
+    "images/short story/fatime.jpg",
+    "images/short story/i know why the caged gird sings.jpg",
+    "images/short story/just courage.jpg",
+    "images/short story/love your life.jpg",
+    "images/short story/never in ink.jpg",
+    "images/short story/no country for old man.jpg",
+    "images/short story/short story.jpg",
+    "images/short story/stephen king.jpg",
+    "images/short story/the accidents.jpg",
+    "images/short story/the bitter.jpg",
+    "images/short story/the melanie.jpg",
+    "images/short story/the price of down.jpg",
+    "images/short story/the short short.jpg",
+    "images/short story/the winning mind set.jpg",
+    "images/short story/this road i ride.jpg"
+
+];
+
+		
+		
+		
+		
+var getArray = JSON.parse(localStorage["shoppingCart"]);
+var grandPrice = 0;
+var grandQuantity = 0;
+showData();
+function showData() {
+ if(getArray.length === 0) {
+        document.getElementById("cartTable").innerHTML = "No Item selected";
+ } else {
+    for(i = 0; i < getArray.length;i++) {
+	  var a = Number(getArray[i].image1);
+	  var b = imageArray[a];
+	  document.getElementById("cartTable").innerHTML += '<tr><td><img  src="" id="img'+ i +'" class="scimg" /></td><td>'+ getArray[i].Name +'<br /><button id="cartRemoveBtn" onClick="removeItemToCart('+ i +');" style="cursor:pointer">Remove</button></td><td>'+  getArray[i].price +'</td><td> <img src="images/25668.png" class="cartPlusBtn1" style="cursor:pointer" onClick="addLessFunc1('+ getArray[i].count +','+ i +');"/><span id="gapSpan" "> '+ getArray[i].count +' </span><img src="images/Science-Minus-Math-icon.png" style="cursor:pointer" class="cartPlusBtn2" onClick="addLessFunc2('+ getArray[i].count +','+ i +');"/></td><td>'+ getArray[i].price * getArray[i].count +'</td></tr>';
+	  document.getElementById("img" + i ).src = b;
+	  grandPrice += Number(getArray[i].price) * getArray[i].count;
+	  document.getElementById("gP").innerHTML = grandPrice;
+	  grandQuantity += getArray[i].count;
+	  document.getElementById("gQ").innerHTML =  grandQuantity;	  
+	} 
+ }
+}
+
+var a = Number(getArray[0].image1);
+var b = imageArray[a];
+
+   function placeOrder(){
+        localStorage.removeItem("shoppingCart");
+		window.location.reload();
+		//alert("Thank you for your Order.With in a three days order is at your door");
+		window.location.href = "cartFrom.html";
+    }
+	
+	var array_length = getArray.length;
+	if(array_length === 0) {
+	 
+	} else {
+	 document.getElementById("cartDiv").className = "hide1";
+	 document.getElementById("noItem").className = "dis";
+	 document.getElementById("btn").className = "hide1";
+	 document.getElementById("cartDiv1").className = "hide1";
+	}
+	
+	
+	function addLessFunc1(n,m) {
+	 var array_get = getArray;
+	 var a = array_get[m].count;
+	 if(a < 5) {
+	      getArray[m].count += 1;
+		  var shopJSON = JSON.stringify(getArray);
+localStorage.setItem("shoppingCart",shopJSON);
+window.location.reload();
+	 } else {
+	    alert("Sorry in one shipment place five copy of the book");
+	 }
+	}
+	function addLessFunc2(n,m) {
+     var array_get = getArray;
+	 var a = array_get[m].count;
+	 if(a > 1) {
+	      getArray[m].count -= 1;
+		  var shopJSON = JSON.stringify(getArray);
+localStorage.setItem("shoppingCart",shopJSON);
+window.location.reload();
+	 } 
+	}
+	
+	
+    function removeItemToCart(n) {
+	     getArray.splice(n,1);
+		 var shopJSON = JSON.stringify(getArray);
+         localStorage.setItem("shoppingCart",shopJSON);
+		 window.location.reload();
+	}
+	
+	
+	                                                   //Header Start
+function over(n) {
+var image = n;
+switch(image) {
+    case 0:
+    document.getElementById("im0").src="images/homepage1.png";
+    break;
+    case 1:
+    document.getElementById("im1").src="images/About-Us-Icon-21.png";
+    break;
+    case 2:
+    document.getElementById("im2").src="images/books1.png";
+    break;
+    case 3:
+    document.getElementById("im3").src="images/magazine1.jpg";
+    break;
+    case 4:
+    document.getElementById("im4").src="images/ContactUs-011.gif";
+    break;
+}
+
+}
+
+function out(n) {
+var image = n;
+switch(image) {
+    case 0:
+    document.getElementById("im0").src="images/homepage2.png";
+    case 1:
+    document.getElementById("im1").src="images/About-Us-Icon-22.png";
+    break;
+    case 2:
+    document.getElementById("im2").src="images/books11.png";
+    break;
+    case 3:
+    document.getElementById("im3").src="images/magazine2.jpg";
+    break;
+    case 4:
+    document.getElementById("im4").src="images/ContactUs-0111.gif";
+    break;
+}
+
+}
+
+
+
+	//cart quantity display Start
+												
+var cartImageQuantityDisplay = JSON.parse(localStorage["shoppingCart"]);
+var cartQunatityCount = 0;
+if(cartImageQuantityDisplay.length === 0) {
+} else {
+	for(i = 0; i < cartImageQuantityDisplay.length;i++) {
+		cartQunatityCount += cartImageQuantityDisplay[i].count;
+		document.getElementById("cartEndi").innerHTML = cartQunatityCount;
+		document.getElementById("cartEndi").className = "cartShow";
+	}
+}
+												//cart quantity display End												   
+
+													   //Header End
+													   //Counter Start
+													   //Counter End
+        </script>
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--Footer Start-->
+                                                            
+<div class="container">
+    <div id="footer">
+        <ul>
+            <li><a href="https://pk.linkedin.com/"><img src="images/footer/in.png" /></a><br /><a href="https://pk.linkedin.com/">Linkedin</a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/footer/youtube.png" /></a><br /><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="https://www.facebook.com/"><img src="images/footer/facebook1.jpg" /></a><br /><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/"><img src="images/footer/pinterest.jpg" /></a><br /><a href="https://www.pinterest.com/">Pinterest</a></li>
+            <li><a href="https://twitter.com/"><img src="images/footer/twitter.jpg" /></a><br /><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/footer/instragram.png" /></a><br /><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://plus.google.com/"><img src="images/footer/google.png" /></a><br /><a href="https://plus.google.com/">Google+</a></li>
+        </ul>
+        <p>The world belongs to those who read.<br />
+        we work with clients from all over.Get in touch with us!
+        </p>
+        <ul id="div2">
+            <li><img src="images/footer/email.png" /><a href="mailto:kazijatoi@gmail.com"><b id="b1">kazijatoi@gmail.com</b></a></li>
+            <li><img src="images/footer/phone.jpg" /><b id="b2">0335-1379302</b></li>
+            <li><img src="images/footer/home.png" /><address><b id="b3">Knowledge Oxygen book shop</b><br /><b id="b4">25 Sandwich Street,Plymouth,02360.</b></address></li>
+        </ul>
+    </div>
+</div>
+
+
+
+                                                              <!--Footer End-->
+		
+	
+    </body>
+
+</html>

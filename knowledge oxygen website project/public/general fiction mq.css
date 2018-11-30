@@ -1,0 +1,9 @@
+@media only screen and (max-width: 455px) {
+	#main-table {
+		margin-top:600px;
+	}
+	.childHomePage {
+		position:relative;
+		top:-86px;
+	}
+}

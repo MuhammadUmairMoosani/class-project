@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1027px) {
+#aboutdiv1 {
+ display:inline-block;
+ position:relative;
+ top:250px;
+ left:2%;
+ width:90%;
+ position:absolute;
+}
+#aboutdiv1 h1 {
+	width:100%;
+    margin-left:2%;
+    display:inline-block;
+    margin-top:20px;
+	background-color:#ffffff;
+	border-radius:5px;
+	opacity:0.7;
+	
+}
+#aboutdiv1 p {
+    width:100%;
+    color:#ffffff;
+	font-weight:bold;
+    font-family:arial;
+    font-size:20px;
+    margin:0 auto;
+    padding:30px 20px 30px 10px;
+    line-height:30px;
+	text-align:center;
+	background-color:#737373;
+	border-radius:5px;
+	opacity:0.7;
+}
+}
+@media only screen and (max-width: 479px) {
+#aboutdiv1 p {
+	line-height:20px;
+}
+}
+@media only screen and (max-width: 455px) {
+	#aboutdiv2 {
+		margin-top:400px;
+	}
+	#aboutdiv1 {
+		margin-top:380px;
+	}
+	#cartEndi {
+	
+	position:relative;
+	bottom:590px;
+	left:88%;
+	
+}
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knowledge oxygen</title>
+        <link href="knowledgeoxygen.css" type="text/css" rel="stylesheet">
+        <link href="icon/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+                                                                <!--header Start-->
+    <div class="container">
+        <div id="header">
+            <img src="images/knowledgeoxygen.jpg"  id="logo-image"/>
+            <ul id="nlist">
+                <li class="color" onMouseover="over(0)" onMouseout="out(0);"><a href="index.html"><img src="images/homepage2.png" id="im0" /></a><br /><a href="index.html" id="con1">Home</a></li>
+                 <li class="color" id="hhover" onMouseover="over(2);" onMouseout="out(2);"><img src="images/books11.png" id="im2"   /><br /><a href="#" id="con3">Books</a>
+                <ul id="under" class="hide">
+                    <li><a href="historical fiction.html">Historical Fiction</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="short story.html">Short Story</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+					
+                </ul>
+                </li>
+                        <li class="color" id="hhover1"  onMouseover="over(3);" onMouseout="out(3);"><img src="images/magazine2.jpg" id="im3"   /><a href="#" id="con4">Magazine</a>
+                <ul id="mzin" class="hide" >
+                    <li><a href="tribune.html">Tribune</a></li>
+                    <li><a href="redbook.html">Redbook</a></li>
+                    <li><a href="wired.html">Wired</a></li>
+                    <li><a href="entertainment weekly.html">Entertainment Weekly</a></li>
+                </ul>
+                </li>
+                <li class="color" onMouseover="over(1);" onMouseout="out(1);"><a href="about us.html"><img src="images/About-Us-Icon-22.png" id="im1"  /></a><br /><a href="about us.html" id="con2">About <span class="usHide">Us</span></a></li>
+                <li class="color" onMouseover="over(4);" onMouseout="out(4);"><a href="contact us.html" ><img src="images/ContactUs-0111.gif" id="im4"  /></a><br /><a href="contact us.html" id="con">Contact <span class="usHide">Us</span></a></li>
+                <li class="meandmy"><a href="cart.html"><img src="images/shoping cart.jpg" id="im5" /></a><span id="cartEndi" class="cartHide">""</span></li>
+            </ul>
+        </div>
+    </div>        
+
+   <div class="clear">
+    </div>
+
+                                                                  <!--header End-->
+
+
+                                                                  <!--Image Slider Start-->
+
+<div class="container">
+    <div id="slider">
+        <img src="images/sliderback.jpg" id="sliback" />
+        <div class="sm"  ><img src="images/historical/scripting.jpg" class="ii" /><span class="title">SCRIPTING REVOLUTION</span><span class="sp"><br />
+           "The 'Arab Spring' was heralded and publicly embraced by foreign leaders of many countries that define themselves by their own historic revolutions. The contributors to this volume examine the legitimacy of these comparisons by exploring whether or not all modern revolutions follow a pattern or script. Traditionally, </span></div>
+        <div class="sm" ><img src="images/historical/a game of thrones.jpg" class="ii" onClick="nextPage(20);"/><span class="title">A GAME OF THRONES</span><span class="sp"><br />
+        HBO's hit series A Game of Thrones is based on George R. R. Martin's internationally best-selling series A Song of Ice and Fire, the greatest fantasy epic of the modern age. A Game of Thrones is the first volume in the series.</span></div>
+        <div class="sm" ><img src="images/horror/vampire diaries.jpg" class="ii" onClick="nextPage(78);"/><span class="title">THE VAMPIRE DIARIES</span><span class="sp"><br />
+       "Elena Gilbert has never been an ordinary teenager. In love with the irresistible vampire brothers Stefan and Damon, she has died, been brought back to life, fought evil, and journeyed to hell and back to save Stefan. Now her most dangerous enemy, Klaus, has returned, and Elena realizes she must make a terrible sacrifice to protect her world . . . and fulfill her destiny.");
+      localStorage.setItem("bookN","Vampire Diaries"</span></div>
+        <div class="sm" ><img src="images/short sotry/this road i ride.jpg" class="ii" onClick="nextPage(99);"/><span class="title">THIS ROAD I RIDE</span><span class="sp"><br />
+"Juliana Buhring had been mired in a dark hole of depression after the death of a man she loved, and when an acquaintance suggested they honor his memory by biking across Canada, she thought, “Canada? Why not the world?” And why not alone.She had never seriously ridden a bicycle before. She had no athletic experience or corporate sponsorship, but with just eight months of preparation, Juliana Buhring departed from Naples, ");
+      localStorage.setItem("bookN","This Road I Ride"</span></div>
+        <div class="sm" ><img src="images/adventure/ella.jpg" class="ii" onClick="nextPage(42)"/><span class="title">ELLA DETHRONED</span><span class="sp"><br />
+        Hunted and desperate, Ella, the former Luminess of the Blue Mountain Realm, must evade her pursuers and fulfill a mission given her by the gods. She carries a strange, otherworldly device, the purpose of which she does not know, but if she is to grasp hold of a conditioned prophecy spoken over her, she must survive to deliver the device to a mysterious man named Quanthum.</span></div>
+       
+        
+    </div>
+     <div class="button" onClick="slider(-1);"><i class="fa fa-angle-left fa-5x" aria-hidden="true"></i></div>
+        <div class="button"  onClick="slider(1);" id="rightsli"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></div>
+</div>
+
+
+
+
+
+                                                <!--Image Slider End-->
+                                                <!--Home Page Table Start-->
+
+<div class="container">
+    <div id="main-table">
+        <table>
+            <tr>
+                <th colspan="2"><a href="historical fiction.html" class="headHomePage">HISTORICAL FICTION</a></th>
+                <td></td>
+            </tr>
+             <tr>
+                <td><a href="nextPage.html"><img src="images/historical/against our better judgment.jpg" onClick="nextPage(23);"/></a><br /><span class="size">Against Our Better Judgment<br />By: Alison Weir<br /><b>Rs:800.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/historical/anna karenina.jpg" onClick="nextPage(24);"/></a><br /><span class="size">Anna Karenina<br />By: Leo Toistoy<br /><b><span class="poff"><s>Rs:1499.00 </s> 20% Off</span><br />Rs:1199.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/historical/fever.jpg" onClick="nextPage(28);"/></a><br /><span class="size">Fever<br />By: Mary Beth Keane<br /><b><span class="poff"><s>Rs:2000.00 </s> 40% Off</span><br />Rs:800.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/historical/the miniaturist.jpg" onClick="nextPage(37);"/></a><br /><span class="size">The Miniaturist<br />By: Jessie Burton<br /><b>Rs:2500.00</b></span></td>
+            </tr>
+              <tr>
+                <th colspan="2"><a href="adventure.html" class="headHomePage">ADVENTURE</a></th>
+                <td></td>
+            </tr>
+             <tr>
+                <td><a href="nextPage.html"><img src="images/adventure/ella.jpg" onClick="nextPage(42);"/></a><br /><span class="size">Ella Dethroned<br />By: Brandon Barr<br /><b><span class="poff"><s>Rs:3300.00 </s> 23% Off</span><br />Rs:2541.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/adventure/huckleberry.jpg" onClick="nextPage(44);"/></a><br /><span class="size">Huckleberry Finn<br /><br /><b>Rs:1200.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/adventure/one game home.jpg" onClick="nextPage(49);"/></a><br /><span class="size">One Came Home<br />By: Amy timberlake<br /><b>Rs:2999.00</b></span></td>
+               <td><a href="nextPage.html"><img src="images/adventure/walking the nile.jpg" onClick="nextPage(58);"/></a><br /><span class="size">Walking The Nile<br />By: Levison Wood<br /><b><span class="poff"><s>Rs:2000.00 </s> 40% Off</span><br />Rs:800.00</b></span></td>
+            </tr>
+               <tr>
+                <th colspan="2"><a href="short story.html" class="headHomePage">SHORT STORY</a></th>
+            </tr>
+             <tr>
+                <td><a href="nextPage.html"><img src="images/short story/books of die for.jpg" onClick="nextPage(81);"/></a><br /><span class="size">Books To Die For<br />By: John Connolly<br /><b>Rs:4500.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/short story/i know why the caged gird sings.jpg" onClick="nextPage(86);"/></a><br /><span class="size">I Know Why The Caged Bird Sings<br />By: Maya Angelou<br /><b>Rs:3000.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/short story/love your life.jpg" onClick="nextPage(88);"/></a><br /><span class="size">Love Your Life<br /><br /><b><span class="poff"><s>Rs:4000.00 </s> 10% Off</span><br />Rs:3600.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/short story/the bitter.jpg" onClick="nextPage(94);"/></a><br /><span class="size">The Bitter Taste<br /><br /><b><span class="poff"><s>Rs:1499.00 </s> 20% Off</span><br />Rs:1199.00</b></span></td>
+            </tr>
+               <tr>
+                <th colspan="2"><a href="horror.html" class="headHomePage">HORROR</a></th>
+            </tr>
+             <tr>
+                <td><a href="nextPage.html"><img src="images/horror/dark vanishing.jpg" onClick="nextPage(63);"/></a><br /><span class="size">Dark Vanishings<br />By: Dan padavona<br /><b>Rs:2500.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/horror/les chiens.jpg" onClick="nextPage(66);"/></a><br /><span class="size">Les Chiens<br />By: Allan Stratton<br /><b>Rs:3000.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/horror/phobic.jpg" onClick="nextPage(68);"/></a><br /><span class="size">Phobic<br />By: Cortney Pearson<br /><b><span class="poff"><s>Rs:4000.00 </s> 10% Off</span><br />Rs:3600.00</b></span></td>
+                <td><a href="nextPage.html"><img src="images/horror/the creep.jpg" onClick="nextPage(74);"/></a><br /><span class="size">The Creep<br />By: John T.Foster<br /><b><span class="poff"><s>Rs:1499.00 </s> 20% Off</span><br />Rs:1199.00</b></span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+ 
+
+                                                              <!--Home Page Table End-->
+                                                              <!--Footer Start-->
+                                                            
+<div class="container">
+    <div id="footer">
+        <ul>
+            <li><a href="https://pk.linkedin.com/"><img src="images/footer/in.png" /></a><br /><a href="https://pk.linkedin.com/">Linkedin</a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/footer/youtube.png" /></a><br /><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="https://www.facebook.com/"><img src="images/footer/facebook1.jpg" /></a><br /><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/"><img src="images/footer/pinterest.jpg" /></a><br /><a href="https://www.pinterest.com/">Pinterest</a></li>
+            <li><a href="https://twitter.com/"><img src="images/footer/twitter.jpg" /></a><br /><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/footer/instragram.png" /></a><br /><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://plus.google.com/"><img src="images/footer/google.png" /></a><br /><a href="https://plus.google.com/">Google+</a></li>
+        </ul>
+        <p>The world belongs to those who read.<br />
+        we work with clients from all over.Get in touch with us!
+        </p>
+        <ul id="div2">
+            <li><img src="images/footer/email.png" /><a href="mailto:kazijatoi@gmail.com"><b id="b1">kazijatoi@gmail.com</b></a></li>
+            <li><img src="images/footer/phone.jpg" /><b id="b2">0335-1379302</b></li>
+            <li><img src="images/footer/home.png" /><address><b id="b3">Knowledge Oxygen book shop</b><br /><b id="b4">25 Sandwich Street,Plymouth,02360.</b></address></li>
+        </ul>
+    </div>
+</div>
+
+
+
+                                                              <!--Footer End-->
+    <script src="knowledgeoxygen.js" type="text/javascript">
+    </script>
+    </body>
+</html>
